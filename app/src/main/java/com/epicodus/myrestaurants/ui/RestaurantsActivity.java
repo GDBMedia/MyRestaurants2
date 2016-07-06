@@ -51,7 +51,6 @@ public class RestaurantsActivity extends AppCompatActivity {
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET)
                 == PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(RestaurantsActivity.this, "access", Toast.LENGTH_LONG).show();
             getRestaurants(location);
         }else{
             Toast.makeText(RestaurantsActivity.this, "no access", Toast.LENGTH_LONG).show();
